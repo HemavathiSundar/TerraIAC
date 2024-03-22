@@ -10,7 +10,6 @@ resource "aws_instance" "myec2" {
 terraform {
   backend "s3" {
     bucket  = "ishasbucket123"
-    key  = ishasbucket123/terraform.tfstate
     region  = "us-east-1"
   }
 }
